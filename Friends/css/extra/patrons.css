@@ -1,0 +1,75 @@
+@media screen and (max-width: 720px) {
+    .maincontainer {
+        grid-area: 1/1/1/6;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 5vw;
+        color: aliceblue
+    }
+
+    a {
+        color: antiquewhite;
+    }
+
+    .title {
+        font-size: 7vw;
+    }
+
+    .ten {
+        color: lawngreen
+    }
+
+    .five {
+        color: yellowgreen;
+    }
+
+    .one {
+        color: palegreen
+    }
+
+    h3 {
+        font-size: 6vw;
+        color: aliceblue;
+        margin-top: -4vw;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .maincontainer {
+        grid-area: 1/2/1/10;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2vw;
+        color: aliceblue
+    }
+
+    a {
+        color: antiquewhite;
+    }
+
+    .title {
+        font-size: 4vw;
+    }
+
+    .ten {
+        color: lawngreen
+    }
+
+    .five {
+        color: yellowgreen;
+    }
+
+    .one {
+        color: palegreen
+    }
+
+    h3 {
+        font-size: 3vw;
+        color: aliceblue;
+        margin-top: -1.5vw;
+    }
+}

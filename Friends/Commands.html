@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Commands</title>
+    <link rel="icon" type="image/x-icon" href="./assets/SMG_SMP_Logo.png">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/discord-commands.css">
+    <script type="module" src="css/Firebase.js"></script>
+    <script src="css/googletag.js"></script>
+</head>
+<body>
+    <ul id="homeul">
+        <li><a class="active" href="./Home.html">Home</a></li>
+        <li><a href="./Commands.html">Discord-Commands</a></li>
+        <li><a href="./Plugins.html">Plugins</a></li>
+        <li><a href="https://someminegame.com">Main Page</a><li>
+        <li style="padding: 10px 16px; float: right; color: firebrick">Average Server Wiki</li>
+    </ul>
+    <h1 style="background-color: yellow;font-size: 24px; color: black">THE SMG-SMP WIKI IS STILL UNDER CONSTRUCTION. EXPECT BUGS.</h1>
+    <div class="maingrid">
+        <div class="maincontainer">
+            <h1 class="title">These commands are used on the Discord server to add extra functionality to the Minecraft server. They are custom coded by SomeMineGame in a Discord bot written in Python. There are still new commands being added to the server every so often, so come back to see what's been added in the "What's New" section! Click on a command to learn more about it! Current Prefix - <code>&</code></h1>
+            <h2>Base Commands</h2>
+            <table>
+                <tr>
+                    <th class="command">Command</th>
+                    <th class="desc">Short Description</th>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/addBase.html'">
+                    <td class="command">addBase</td>
+                    <td class="desc">Adds your base for others to see</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/editBase.html'">
+                    <td class="command">editBase</td>
+                    <td class="desc">Edits your base location</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/removeBase.html'">
+                    <td class="command">removeBase</td>
+                    <td class="desc">Removes your base location</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/viewBase.html'">
+                    <td class="command">viewBase</td>
+                    <td class="desc">Gives the location of a base</td>
+                </tr>
+            </table>
+            <h2>Database Commands</h2>
+            <table>
+                <tr>
+                    <th class="command">Command</th>
+                    <th class="desc">Short Description</th>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/addUser.html'">
+                    <td class="command">addUser</td>
+                    <td class="desc">Creates a user's files</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/advRepair.html'">
+                    <td class="command">advRepair</td>
+                    <td class="desc">Recreates a user's files</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/listOldServers.html'">
+                    <td class="command">listOldServers</td>
+                    <td class="desc">Lists past server resets</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/repairUser.html'">
+                    <td class="command">repairUser</td>
+                    <td class="desc">Adds missing files a user may not have</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/resetServer.html'">
+                    <td class="command">resetServer</td>
+                    <td class="desc">Resets everyone's files</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/restoreServer.html'">
+                    <td class="command">restoreServer</td>
+                    <td class="desc">Restores data from a previous reset</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/update.html'">
+                    <td class="command">update</td>
+                    <td class="desc">Updates files to a newer format</td>
+                </tr>
+            </table>
+            <h2>Miscellaneous Commands</h2>
+            <table>
+                <tr>
+                    <th class="command">Command</th>
+                    <th class="desc">Short Description</th>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/cmd.html'">
+                    <td class="command">cmd</td>
+                    <td class="desc">Remotely run a Minecraft command</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/day.html'">
+                    <td class="command">day</td>
+                    <td class="desc">See the current Minecraft day</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/help.html'">
+                    <td class="command">help</td>
+                    <td class="desc">Sends a link to this page</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/ip.html'">
+                    <td class="command">ip</td>
+                    <td class="desc">Lists the IPs or edits them</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/poll.html'">
+                    <td class="command">poll</td>
+                    <td class="desc">Creates a generic poll with up to 10 options</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/restart.html'">
+                    <td class="command">restart</td>
+                    <td class="desc">Restarts the Discord bot</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/status.html'">
+                    <td class="command">status</td>
+                    <td class="desc">Gives the server's local and global status</td>
+                </tr>
+                <tr class="element" .clickable onclick="window.location='./Commands/test.html'">
+                    <td class="command">test</td>
+                    <td class="desc">Test's the Discord bot's response</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<footer>
+    <ul style="padding: 3px 10px">
+        <li class="left">Site Created By: SomeMineGame</li>
+        <li class="right">Page Last Edited: September 1, 2023 at 9:16 AM</li>
+    </ul>
+</footer>
+</html>

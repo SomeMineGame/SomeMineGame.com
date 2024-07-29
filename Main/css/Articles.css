@@ -1,0 +1,42 @@
+@media screen and (max-width: 720px) {
+    body {
+        color: aliceblue;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 7vw;
+        grid-area: 1/1/1/6
+    }
+
+    p {
+        font-size: 5.5vw;
+        grid-area: 2/1/2/6
+    }
+
+    a {
+        color:antiquewhite
+    }
+
+}
+
+@media screen and (min-width: 721px) {
+    body {
+        color: aliceblue;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.25vw;
+        grid-area:1/2/1/10
+    }
+
+    p {
+        font-size: 1.75vw;
+        grid-area: 2/2/2/10
+    }
+
+    a {
+        color:antiquewhite
+    }
+}

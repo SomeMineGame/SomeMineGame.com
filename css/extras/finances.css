@@ -1,0 +1,118 @@
+@media screen and (max-width:720px) {
+    h1 {
+        color: aliceblue;
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    .Title {
+        font-size: 8vw;
+    }
+
+    h1 a {
+        color: antiquewhite;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    a {
+        color:lightslategray;
+    }
+
+    figure {
+        display: inline-block;
+        width: 80vw;
+        margin: 2vw;
+        vertical-align: top;
+        background-color: lightcyan;
+    }
+
+    .maingrid h3 {
+        font-size: 5vw;
+    }
+
+    .maingrid h4 {
+        font-size: 4vw;
+        text-align: left;
+        padding-left: 4vw;
+    }
+
+    span {
+        padding-right: 4vw;
+        float: right;
+        display: block;
+    }
+
+    .maincontainer {
+        grid-area: 1/1/1/6;
+        text-align: center;
+        color:darkslategray;
+    }
+}
+@media screen and (min-width:721px) {
+    .statement {
+        margin-top: 4vw;
+        grid-area: 1/3/1/9;
+        display: grid;
+    }
+
+    img {
+        width: 2vw;
+        height: 2vw;
+        padding-left: 5vw;
+        padding-top: 3vw;
+        float: left;
+    }
+
+    .logot {
+        float: left;
+        font-size: 0.75vw;
+        padding-left: 0.5vw;
+        padding-top: 2.1vw;
+        line-height: 1.2vw;
+    }
+
+    .info {
+        float: right;
+        text-align: right;
+        font-size: 0.75vw;
+        padding-right: 5vw;
+        padding-top: 2.1vw;
+        line-height: 1.2vw;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 1.3vw;
+    }
+
+    .date {
+        text-align: center;
+        font-size: 1.2vw;
+        margin-top:-1vw;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 1vw;
+    }
+
+    .data {
+        font-size: 0.8vw;
+        width:80vw;
+        display:initial;
+        background-color: lightgrey;
+    }
+
+    .name {
+        text-align: left;
+        color: #444;
+    }
+
+    .amount {
+        text-align: right;
+        color: #444;
+    }
+}

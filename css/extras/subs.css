@@ -1,0 +1,149 @@
+@media screen and (max-width: 720px) {
+    .maincontainer {
+        grid-area: 1/1/1/6;
+        text-align: center;
+    }
+
+    .maincontainer h1 {
+        color: aliceblue;
+        font-size: 6vw;
+    }
+
+    .maincontainer h2 {
+        color: aliceblue;
+        font-size: 5vw;
+        margin-bottom: 7vh;
+    }0
+
+    a {
+        color:aliceblue;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+
+    th {
+        font-size: 4vw;
+        color: deepskyblue;
+        width: 30vw;
+    }
+
+    td {
+        font-size: 3.5vw;
+        padding: 1%;
+        width: 50vw;
+        color: cornsilk;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .extrainfo {
+        grid-area: 5/1/5/6;
+        text-align: center;
+    }
+
+    .extrainfo h1 {
+        color: aliceblue;
+        font-size: 5vw;
+    }
+
+    .category {
+        color: greenyellow;
+    }
+
+    .spacer {
+        background-color: black;
+    }
+
+    .warn {
+        margin-top: -2vh;
+        margin-bottom: 4vh;
+        font-size: 3vw;
+        color:orangered;
+    }
+
+    .info {
+        color: yellow;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .maincontainer {
+        grid-area: 1/2/1/10;
+        text-align: center;
+    }
+
+    .maincontainer h1 {
+        color: aliceblue;
+        font-size: 2.1vw;
+    }
+
+    .maincontainer h2 {
+        color: aliceblue;
+        font-size: 1.75vw;
+        margin-bottom: 5vh;
+    }
+
+    .warn {
+        margin-top: -2vh;
+        margin-bottom: 4vh;
+        color:orangered;
+    }
+
+    .info {
+        color: yellow;
+        font-size: 1vw;
+    }
+
+    a {
+        color:aliceblue;
+    }
+
+    table {
+        grid-area: 2/2/2/10;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+
+    th {
+        font-size: 1.5vw;
+        color: deepskyblue;
+        width: 13vw;
+    }
+
+    td {
+        font-size: 1.25vw;
+        padding: 1%;
+        width: 19vw;
+        color: cornsilk;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .category {
+        color: greenyellow;
+        width: 10vw;
+    }
+
+    .spacer {
+        background-color: black;
+    }
+
+    .extrainfo {
+        grid-area: 3/2/3/10;
+    }
+
+    .extrainfo h1 {
+        color: aliceblue;
+        font-size: 2.1vw;
+    }
+}

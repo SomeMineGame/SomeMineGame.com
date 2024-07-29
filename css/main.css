@@ -1,0 +1,173 @@
+@media screen and (max-width:720px){
+    body {
+        background-color: #333;
+    }
+
+    body ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #444;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    body li {
+        float: left;
+        font-size: 4vw;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+        padding: 10px 16px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #222;
+    }
+
+    .active {
+        background-color: #2a2a2a;
+    }
+
+    footer {
+        background-color:lightslategray;
+        color: black;
+        text-align: center;
+        font-size: 3vw;
+        overflow-wrap: break-word;
+        position: fixed;
+        bottom: 0;
+        width:96%;
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    footer li{
+        font-size: 4vw;
+    }
+
+    .left {
+        color: aliceblue;
+        float: none;
+    }
+
+    .right {
+        color: aliceblue;
+        float: none;
+    }
+
+    img {
+        max-width: 95vw;
+    }
+
+    figure {
+        display: inline-block;
+        width: 44vw;
+        margin: 1vw;
+        vertical-align: top;
+    }
+
+    figure img {
+        width: 44vw;
+    }
+
+    figure figcaption {
+        font-size: 4.5vw;
+        margin-top: 1vh;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .data {
+        border: outset 4px #555;
+        background-color: #777;
+        width: 90vw;
+    }
+
+    .data h2 {
+        text-align: left;
+        margin-left: 1.5vw;
+    }
+
+}
+
+@media screen and (min-width:721px){
+    body {
+        background-color: #333;
+        margin-bottom: 1vw;
+    }
+
+    body ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #444;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    body li {
+        float: left;
+        font-size: 1.5vw;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+        padding: 10px 16px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #222;
+    }
+
+    .active {
+        background-color: #2a2a2a;
+    }
+
+    footer {
+        background-color:lightslategray;
+        color: black;
+        text-align: center;
+        font-size: 1vw;
+        position:fixed;
+        bottom: 0;
+        width: 99%;
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    }
+
+    footer li{
+        font-size: 1.5vw;
+    }
+
+    .left {
+        color: aliceblue;
+        float: left;
+    }
+
+    .right {
+        color: aliceblue;
+        float: right;
+    }
+
+    img {
+        max-width: 80vw;
+    }
+}
