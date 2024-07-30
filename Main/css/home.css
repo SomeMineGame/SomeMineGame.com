@@ -131,8 +131,9 @@
     }
 
     .backgrounddiv2 button {
-        color: azure;
+        color: grey;
         text-align: center;
+        font-size: 1.25vw;
     }
 
     .info {
