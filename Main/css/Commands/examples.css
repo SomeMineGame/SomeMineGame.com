@@ -28,6 +28,7 @@
 @media screen and (min-width: 721px) {
     .info {
         grid-area: 1/2/1/10;
+        margin-bottom: 2vw;
     }
 
     h1 {

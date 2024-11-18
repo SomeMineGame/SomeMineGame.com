@@ -75,7 +75,7 @@
         <li><a href="https://someminegame.com">Main Page</a><li>
         <li style="padding: 10px 16px; float: right; color: orange">SMG-SMP Wiki</li>
     </ul>
-    <h1 style="background-color: yellow;font-size: 24px; color: black">THE SMG-SMP WIKI IS STILL UNDER CONSTRUCTION. EXPECT BUGS.</h1>
+    <h1 style="background-color: yellow;font-size: 24px; color: black; text-align:center">THE SMG-SMP WIKI IS STILL UNDER CONSTRUCTION. EXPECT BUGS.</h1>
     <div class="maingrid">
         <div class="maincontainer">
             <h1 class="title">These commands are used on the Discord server to add extra functionality to the Minecraft server. They are custom coded by SomeMineGame in a Discord bot written in Python. There are still new commands being added to the server every so often, so come back to see what's been added in the "What's New" section! Click on a command to learn more about it! Current Prefix - <code>&</code></h1>
@@ -103,9 +103,9 @@
                     <td class="desc">Gives the location of a base</td>
                 </tr>
             </table>
-            <h2 id="addServer addUser listOldServers resetServer restoreServer update">Database Commands</h2>
+            <h2 id="addServer addUser listOldServers resetServer restoreServer update updateUser">Database Commands</h2>
             <table>
-                <tr id="addServer addUser listOldServers resetServer restoreServer update">
+                <tr id="addServer addUser listOldServers resetServer restoreServer update updateUser">
                     <th class="command">Command</th>
                     <th class="desc">Short Description</th>
                 </tr>
@@ -133,10 +133,14 @@
                     <td class="command">update</td>
                     <td class="desc">Updates files to a newer format</td>
                 </tr>
+                <tr id="updateUser" class="element" .clickable onclick="window.location='./Commands/updateUser'">
+                    <td class="command">updateUser</td>
+                    <td class="desc">Updates your username and associated files</td>
+                </tr>
             </table>
-            <h2 id="addMoney bank buy charity clockIn clockOut drawLottery forceClockOut inflation lottery pay payGovt price removeMoney sell setMoney taxBal taxPay voidBuy voidSell wealthy">Economy Commands</h2>
+            <h2 id="addMoney bank buy charity clockIn clockOut drawLottery enchant enchantmentPlus forceClockOut inflation lottery pay payGovt price removeMoney sell setMoney shop taxBal taxPay voidBuy voidSell wealthy">Economy Commands</h2>
             <table>
-                <tr id="addMoney bank buy charity clockIn clockOut drawLottery forceClockOut inflation lottery pay payGovt price removeMoney sell setMoney taxBal taxPay voidBuy voidSell wealthy">
+                <tr id="addMoney bank buy charity clockIn clockOut drawLottery enchant enchantmentPlus forceClockOut inflation lottery pay payGovt price removeMoney sell setMoney shop taxBal taxPay voidBuy voidSell wealthy">
                     <th class="command">Command</th>
                     <th class="desc">Short Description</th>
                 </tr>
@@ -172,7 +176,7 @@
                     <td class="command">enchant</td>
                     <td class="desc">Enchant your item if supported</td>
                 </tr>
-                <tr id="drawLottery" class="element" .clickable onclick="window.location='./Commands/enchantmentPlus'">
+                <tr id="enchantmentPlus" class="element" .clickable onclick="window.location='./Commands/enchantmentPlus'">
                     <td class="command">enchantmentPlus</td>
                     <td class="desc">Enchant your item with Enchantment+ if supported</td>
                 </tr>
@@ -211,6 +215,10 @@
                 <tr id="setMoney" class="element" .clickable onclick="window.location='./Commands/setMoney'">
                     <td class="command">setMoney</td>
                     <td class="desc">Sets a user's wallet to a specified amount</td>
+                </tr>
+                <tr id="shop" class="element" .clickable onclick="window.location='./Commands/shop'">
+                    <td class="command">shop</td>
+                    <td class="desc">See items in the shop|remove your items from the shop</td>
                 </tr>
                 <tr id="taxBal" class="element" .clickable onclick="window.location='./Commands/taxBal'">
                     <td class="command">taxBal</td>
@@ -272,9 +280,9 @@
                     <td class="desc">Test's the Discord bot's response</td>
                 </tr>
             </table>
-            <h2 id="addSentence editSentence releasePrisoner requestCase viewSentence">Legal Commands</h2>
+            <h2 id="addSentence editSentence releasePrisoner repotIncident viewSentence">Legal Commands</h2>
             <table>
-                <tr id="addSentence editSentence releasePrisoner requestCase viewSentence">
+                <tr id="addSentence editSentence releasePrisoner reportIncudet viewSentence">
                     <th class="command">Command</th>
                     <th class="desc">Short Description</th>
                 </tr>
@@ -289,6 +297,10 @@
                 <tr id="releasePrisoner" class="element" .clickable onclick="window.location='./Commands/releasePrisoner'">
                     <td class="command">releasePrisoner</td>
                     <td class="desc">Ends a player's prison sentence</td>
+                </tr>
+                <tr id="reportIncident" class="element" .clickable onclick="window.location='./Commands/reportIncident'">
+                    <td class="command">reportIncident</td>
+                    <td class="desc">Opens a legal case against someone</td>
                 </tr>
                 <tr id="viewSentence" class="element" .clickable onclick="window.location='./Commands/viewSentence'">
                     <td class="command">viewSentence</td>
@@ -368,7 +380,7 @@
 <footer id="footer">
     <ul style="padding: 3px 10px">
         <li class="left">Site Created By: SomeMineGame</li>
-        <li class="right">Page Last Edited: July 28, 2023 at 2:41 PM</li>
+        <li class="right">Page Last Edited: August 5, 2024 at 7:31 AM</li>
     </ul>
 </footer>
 </html>
