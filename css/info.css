@@ -1,0 +1,31 @@
+@media screen and (max-width:720px) {
+    h1 {
+        color: aliceblue;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .maingrid h3 {
+        font-size: 4vw;
+    }
+
+    .maincontainer {
+        grid-area: 1/1/1/6;
+    }
+}
+
+@media screen and (min-width:721px) {
+    h1 {
+        color: aliceblue;
+        text-align: center;
+        font-size: 1.9vw;
+    }
+
+    .maingrid h3 {
+        font-size: 1.33vw;
+    }
+
+    .maincontainer {
+        grid-area: 1/2/1/10;
+    }
+}

@@ -1,6 +1,7 @@
 @media screen and (max-width:720px){
     body {
         background-color: #333;
+        margin-bottom: 9vw;
     }
 
     body ul {
@@ -103,7 +104,7 @@
 @media screen and (min-width:721px){
     body {
         background-color: #333;
-        margin-bottom: 1vw;
+        margin-bottom: 1.5vw;
     }
 
     body ul {

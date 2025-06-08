@@ -1,0 +1,118 @@
+@media screen and (max-width:720px) {
+    a {
+        color:aliceblue;
+    }
+
+    .maincontainer {
+        grid-area: 2/1/2/6;
+        text-align: center;
+        margin-bottom: 10vw;
+    }
+
+    figure {
+        display: inline-block;
+        width: 20vw;
+        vertical-align: top;
+        margin: 1vw;
+    }
+
+    figure img {
+        width: 20vw;
+        image-rendering: pixelated;
+    }
+
+    figure figcaption {
+        font-size: 5vw;
+        color: aliceblue;
+        margin-top: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .tags {
+        width: 50vw;
+        font-size: 5vw;
+    }
+
+    .maingrid ul{
+        grid-area: 1/1/1/6;
+        margin-bottom: 5vw;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    button {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width:721px) {
+    a {
+        color:aliceblue;
+    }
+
+    .maincontainer {
+        grid-area: 2/2/2/10;
+        text-align: center;
+    }
+
+    figure {
+        display: inline-block;
+        width: 10vw;
+        vertical-align: top;
+        margin: 1vw;
+    }
+
+    figure img {
+        width: 8vw;
+        image-rendering: pixelated;
+    }
+
+    figure figcaption {
+        font-size: 1.5vw;
+        color: aliceblue;
+        margin-top: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .tags {
+        width: 25vw;
+        font-size: 1.5vw;
+    }
+
+    .maingrid ul{
+        grid-area: 1/2/1/10;
+        margin-bottom: 1vw;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    button {
+        font-size: 1.5vw;
+    }
+
+    h1 {
+        color: aliceblue;
+        font-size: 2.25vw;
+    }
+
+    h2 {
+        font-size: 1.75vw;
+        color:rgb(229, 247, 246)
+    }
+
+    h2 a {
+        color: antiquewhite
+    }
+}
