@@ -1,0 +1,49 @@
+@media screen and (max-width: 720px) {
+    .name {
+        width: 25vw;
+        font-size: 4vw;
+        color: cyan;
+    }
+
+    figure {
+        display: inline-block;
+        width: 44vw;
+        margin: 1vw;
+        vertical-align: top;
+    }
+
+    figure img {
+        width: 44vw;
+    }
+
+    figure figcaption {
+        font-size: 4.5vw;
+        margin-top: 1vh;
+        color: aliceblue;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    figure {
+        display: inline-block;
+        width: 17vw;
+        margin: 1vw;
+        vertical-align: top;
+    }
+    
+    figure:hover {
+        cursor: pointer;
+    }
+
+    figure img {
+        width: 17vw;
+    }
+
+    figure figcaption {
+        font-size: 2vw;
+        margin-top: 1vh;
+        color: aliceblue;
+        text-align: center;
+    }
+}

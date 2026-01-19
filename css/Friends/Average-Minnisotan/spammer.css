@@ -1,0 +1,135 @@
+@media screen and (max-width: 720px) {
+    body {
+        text-align: center;
+    }
+
+    .maincontainer {
+        grid-area: 1/1/1/6;
+    }
+
+    .title {
+        color: aliceblue;
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    a {
+        color:aliceblue;
+    }
+
+    table {
+        grid-area: 2/1/2/6;
+        text-align: center;
+        border-collapse: separate;
+        border-spacing: 0 1vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .command {
+        width: 35vw;
+        font-size: 4vw;
+        color: indianred;
+    }
+
+    .desc {
+        width: 65vw;
+        font-size: 4vw;
+        color: indianred;
+    }
+
+    .element {
+        outline: 0.5vw outset black;
+        background-color:linen;
+    }
+
+    .element td {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        font-size:4vw;
+        height: 9vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+        text-align: center;
+        color: lemonchiffon;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .tags {
+        width: 50vw;
+        font-size: 4vw;
+        margin-top:2vw;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    body {
+        text-align: center;
+    }
+
+    .maincontainer {
+        grid-area: 1/2/1/10;
+    }
+
+    a {
+        color:aliceblue;
+    }
+
+    .title {
+        color: aliceblue;
+        font-size: 2vw;
+        text-align: center;
+        grid-area: 1/2/1/10;
+        margin-bottom: none;
+    }
+
+    table {
+        grid-area: 2/2/2/10;
+        text-align: center;
+        border-collapse: separate;
+        border-spacing: 0 1vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .command {
+        width: 30vw;
+        font-size: 2vw;
+        color: indianred;
+    }
+
+    .desc {
+        width: 60vw;
+        font-size: 2vw;
+        color: indianred;
+    }
+
+    .element {
+        outline: 0.5vw outset black;
+        background-color:linen;
+    }
+
+    .element td {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    h2 {
+        font-size: 2.25vw;
+        text-align: center;
+        color: lemonchiffon;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .tags {
+        width: 25vw;
+        font-size: 1.25vw;
+        margin-top:2vw;
+    }
+}

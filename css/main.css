@@ -5,10 +5,11 @@
     }
 
     body ul {
+        display: flow-root;
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        -webkit-user-select: none;
         background-color: #444;
         position: -webkit-sticky;
         position: sticky;
@@ -16,12 +17,15 @@
     }
 
     body li {
-        float: left;
         font-size: 4vw;
     }
 
-    li a {
+    li {
         display: block;
+    }
+
+    li a {
+        display: none;
         text-align: center;
         padding: 10px 16px;
         color: aliceblue;
@@ -30,6 +34,38 @@
 
     li a:hover {
         background-color: #222;
+    }
+
+    .menu {
+        display: block;
+        float: left;
+    }
+
+    .menuelements {
+        position: absolute;
+        margin-top: calc(4vw + 20px);
+        clear: both;
+        float: left;
+    }
+
+    .menutop:hover ul li a{
+        display: block;
+    }
+
+    .sitename {
+        padding: 10px 16px;
+        margin: 0;
+        float: right;
+        color: orangered;
+        font-family: monospace;
+    }
+
+    ul img {
+        padding-top: 4px;
+        padding-right: 4px;
+        margin: 0;
+        float: right;
+        width: calc(3.5vw + 16px);
     }
 
     .active {
@@ -56,6 +92,13 @@
         font-size: 4vw;
     }
 
+    footer ul li a{
+        display: initial;
+        text-align: initial;
+        padding: initial;
+        text-decoration: none;
+    }
+
     .left {
         color: aliceblue;
         float: none;
@@ -66,10 +109,6 @@
         float: none;
     }
 
-    img {
-        max-width: 95vw;
-    }
-
     figure {
         display: inline-block;
         width: 44vw;
@@ -77,26 +116,9 @@
         vertical-align: top;
     }
 
-    figure img {
-        width: 44vw;
-    }
-
-    figure figcaption {
-        font-size: 4.5vw;
-        margin-top: 1vh;
-        color: aliceblue;
+    .warning {
+        font-size: 4.5vw !important;
         text-align: center;
-    }
-
-    .data {
-        border: outset 4px #555;
-        background-color: #777;
-        width: 90vw;
-    }
-
-    .data h2 {
-        text-align: left;
-        margin-left: 1.5vw;
     }
 
 }
@@ -116,6 +138,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+        text-align: center;
     }
 
     body li {
@@ -135,6 +158,24 @@
         background-color: #222;
     }
 
+    .menu, .secondary {
+        display: none;
+    }
+
+    .sitename {
+        padding: 10px 16px;
+        float: right;
+        color: orangered;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    ul img {
+        padding-top: 4px;
+        padding-right: 4px;
+        float: right;
+        width: calc(1.5vw + 16px);
+    }
+
     .active {
         background-color: #2a2a2a;
     }
@@ -147,6 +188,13 @@
         position:fixed;
         bottom: 0;
         width: 99%;
+    }
+
+    footer ul li a{
+        display: initial;
+        text-align: initial;
+        padding: initial;
+        text-decoration: none;
     }
 
     .maingrid {
@@ -168,7 +216,9 @@
         float: right;
     }
 
-    img {
-        max-width: 80vw;
+    .warning {
+        font-size: 1.5vw !important;
+        text-align: center;
+        padding: 5px;
     }
 }
