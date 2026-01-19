@@ -1,19 +1,125 @@
+
+body {
+    background-color: #334;
+    text-align: center;
+}
+
+/* Navigation List*/
+body ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #445;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+li {
+    display: block;
+}
+
+/* Navigation List Link*/
+li a {
+    text-align: center;
+    padding: 10px 16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #223;
+}
+
+/* Navbar Text*/
+.sitename {
+    padding: 10px 16px;
+    margin: 0;
+    float: right;
+    color: #4484af;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Navbar Image*/
+ul img {
+    padding-top: 4px;
+    padding-right: 4px;
+    margin: 0;
+    float: right;
+}
+
+/* Highlights Current Nav Link*/
+.active {
+    background-color: #2a2a3b;
+}
+
+footer {
+    background-color:lightslategray;
+    color: black;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+}
+
+footer ul li a{
+    display: initial;
+    text-align: initial;
+    padding: initial;
+    text-decoration: underline;
+}
+
+/* Grid Layout*/
+.maingrid {
+    display: grid;
+}
+
+hr {
+    background-color: #4484af;
+    border: none;
+}
+
+/* Left And Right Floated Elements*/
+.left, .right {
+    color: aliceblue;
+}
+
+.imgbg {
+    display: none;
+}
+
+.image img {
+    display: block;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+h1, p {
+    color: aliceblue;
+    text-align: center;
+}
+
+.text {
+    background-color: #223;
+}
+
+a {
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+/* Mobile Screens*/
 @media screen and (max-width:720px){
     body {
-        background-color: #333;
-        margin-bottom: 9vw;
+        margin-bottom: 13vw;
     }
 
     body ul {
         display: flow-root;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        -webkit-user-select: none;
-        background-color: #444;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
+        margin-bottom: 2vw;
     }
 
     body li {
@@ -26,14 +132,6 @@
 
     li a {
         display: none;
-        text-align: center;
-        padding: 10px 16px;
-        color: aliceblue;
-        text-decoration: none;
-    }
-
-    li a:hover {
-        background-color: #222;
     }
 
     .menu {
@@ -52,173 +150,265 @@
         display: block;
     }
 
-    .sitename {
-        padding: 10px 16px;
-        margin: 0;
-        float: right;
-        color: orangered;
-        font-family: monospace;
-    }
-
     ul img {
-        padding-top: 4px;
-        padding-right: 4px;
-        margin: 0;
-        float: right;
         width: calc(3.5vw + 16px);
     }
 
-    .active {
-        background-color: #2a2a2a;
+    .maingrid {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        margin-bottom: 4vw;
     }
 
     footer {
-        background-color:lightslategray;
-        color: black;
         text-align: center;
-        font-size: 3vw;
-        overflow-wrap: break-word;
-        position: fixed;
-        bottom: 0;
-        width:96%;
+        width: calc(100vw - 16px - calc(100vw - 100%));
     }
 
-    .maingrid {
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+    footer ul {
+        margin-bottom: 0;
     }
 
     footer li{
         font-size: 4vw;
     }
 
-    footer ul li a{
-        display: initial;
-        text-align: initial;
-        padding: initial;
-        text-decoration: none;
-    }
-
-    .left {
-        color: aliceblue;
+    .left, .right {
         float: none;
     }
 
-    .right {
-        color: aliceblue;
-        float: none;
+    .text {
+        grid-area: 2/1/2/6;
+        padding: 0 1em;
     }
 
-    figure {
-        display: inline-block;
-        width: 44vw;
-        margin: 1vw;
-        vertical-align: top;
+    .image {
+        grid-area: 1/1/1/6;
     }
 
-    .warning {
-        font-size: 4.5vw !important;
-        text-align: center;
+    hr {
+        grid-area: 3/1/3/6;
+        margin-top: 4vw;
+        margin-bottom: 0;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 5px;
     }
 
+    .image img {
+        width: calc(66vw - calc(66vw - 66%));
+        margin: 2vw auto 4vw auto;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+
+    .desktop {
+        display: none;
+    }
 }
 
-@media screen and (min-width:721px){
+/* Medium Screens */
+@media screen and (min-width:721px) and (max-width:1280px){
     body {
-        background-color: #333;
-        margin-bottom: 1.5vw;
+        margin-bottom: 2.75vw;
     }
 
+    /* Navigation List*/
     body ul {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
         overflow: hidden;
-        background-color: #444;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        text-align: center;
     }
 
+    /* Navigation List Item*/
     body li {
-        float: left;
         font-size: 1.5vw;
+        float: left;
     }
 
+    /* Navigation List Link*/
     li a {
         display: block;
-        text-align: center;
-        padding: 10px 16px;
-        color: aliceblue;
-        text-decoration: none;
     }
 
-    li a:hover {
-        background-color: #222;
-    }
-
+    /* Hides Mobile Only Navigation*/
     .menu, .secondary {
         display: none;
     }
 
-    .sitename {
-        padding: 10px 16px;
-        float: right;
-        color: orangered;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
+    /* Navbar Image*/
     ul img {
-        padding-top: 4px;
-        padding-right: 4px;
-        float: right;
         width: calc(1.5vw + 16px);
     }
 
-    .active {
-        background-color: #2a2a2a;
-    }
-
     footer {
-        background-color:lightslategray;
-        color: black;
-        text-align: center;
         font-size: 1vw;
-        position:fixed;
-        bottom: 0;
         width: 99%;
     }
 
-    footer ul li a{
-        display: initial;
-        text-align: initial;
-        padding: initial;
-        text-decoration: none;
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
     }
 
     .maingrid {
-        display: grid;
         grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        margin-top: 1vw;
+    }
+
+    footer {
+        width: calc(100vw - 16px - calc(100vw - 100%));
     }
 
     footer li{
         font-size: 1.5vw;
     }
 
-    .left {
-        color: aliceblue;
+    .image {
+        grid-area: 1/2/1/5;
+        background-color: #222;
+        width: 28vw;
+        display: flex;
+    }
+
+    .image img {
+        width: 28vw;
+        align-self: center;
+    }
+
+    hr {
+        grid-area: 2/2/2/10;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 5px;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 1.9vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    .text {
+        grid-area: 1/5/1/10;
+        padding: 0em 2.5vw;
+    }
+    
+    .full {
+        grid-area: 1/2/1/10;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+/* Desktop Screens*/
+@media screen and (min-width:1281px){
+    body {
+        margin-bottom: 2.75vw;
+    }
+
+    /* Navigation List*/
+    body ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    /* Navigation List Item*/
+    body li {
+        font-size: 1.5vw;
         float: left;
     }
 
+    /* Navigation List Link*/
+    li a {
+        display: block;
+    }
+
+    /* Hides Mobile Only Navigation*/
+    .menu, .secondary {
+        display: none;
+    }
+
+    /* Navbar Image*/
+    ul img {
+        width: calc(1.5vw + 16px);
+    }
+
+    footer {
+        font-size: 1vw;
+        width: 99%;
+    }
+
+    .left {
+        float: left;
+    }
+    
     .right {
-        color: aliceblue;
         float: right;
     }
 
-    .warning {
-        font-size: 1.5vw !important;
-        text-align: center;
-        padding: 5px;
+    .maingrid {
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        margin-top: 1vw;
+    }
+
+    footer {
+        width: calc(100vw - 16px - calc(100vw - 100%));
+    }
+
+    footer li{
+        font-size: 1.5vw;
+    }
+
+    .image {
+        grid-area: 1/2/1/3;
+        background-color: #223;
+        width: 18vw;
+        display: flex;
+    }
+
+    .image img {
+        width: 18vw;
+        align-self: center;
+    }
+
+    hr {
+        grid-area: 2/2/2/10;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 5px;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 1.7vw;
+    }
+
+    p {
+        font-size: 1.15vw;
+    }
+
+    .text {
+        grid-area: 1/4/1/10;
+        padding: 0 2.5vw;
+    }
+    
+    .full {
+        grid-area: 1/2/1/10;
+    }
+
+    .mobile {
+        display: none;
     }
 }
