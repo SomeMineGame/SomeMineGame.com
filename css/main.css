@@ -1,6 +1,6 @@
 
 body {
-    background-color: #334;
+    background-color: #333;
     text-align: center;
 }
 
@@ -9,7 +9,7 @@ body ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #445;
+    background-color: #444;
     position: sticky;
     top: 0;
     text-align: center;
@@ -28,7 +28,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #223;
+    background-color: #222;
 }
 
 /* Navbar Text*/
@@ -36,7 +36,7 @@ li a:hover {
     padding: 10px 16px;
     margin: 0;
     float: right;
-    color: #4484af;
+    color: #d44d0a;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -50,7 +50,7 @@ ul img {
 
 /* Highlights Current Nav Link*/
 .active {
-    background-color: #2a2a3b;
+    background-color: #2a2a2a;
 }
 
 footer {
@@ -74,7 +74,7 @@ footer ul li a{
 }
 
 hr {
-    background-color: #4484af;
+    background-color: #444;
     border: none;
 }
 
@@ -103,7 +103,7 @@ h1, p {
 }
 
 .text {
-    background-color: #223;
+    background-color: #222;
 }
 
 a {
