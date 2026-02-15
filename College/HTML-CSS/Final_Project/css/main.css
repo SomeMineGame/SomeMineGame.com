@@ -1,0 +1,440 @@
+body {
+    background-color: #333;
+    text-align: center;
+}
+
+/* Navigation List*/
+body ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+li {
+    display: block;
+}
+
+/* Navigation List Link*/
+li a {
+    text-align: center;
+    padding: 10px 16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #222;
+}
+
+/* Navbar Text*/
+.sitename {
+    padding: 10px 16px;
+    margin: 0;
+    float: right;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Navbar Image*/
+ul img {
+    padding-top: 4px;
+    padding-right: 4px;
+    margin: 0;
+    float: right;
+}
+
+/* Highlights Current Nav Link*/
+.active {
+    background-color: #2a2a2a;
+}
+
+footer {
+    background-color:lightslategray;
+    color: black;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+}
+
+/* Grid Layout*/
+.maingrid {
+    display: grid;
+}
+
+hr {
+    background-color: orangered;
+    border: none;
+}
+
+/* Left And Right Floated Elements*/
+.left, .right {
+    color: aliceblue;
+}
+
+.imgbg {
+    display: none;
+}
+
+.image img, .image2 img {
+    display: block;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+h1, p {
+    color: aliceblue;
+    text-align: center;
+}
+
+.intro, .intro2, .paragraphs {
+    background-color: #222;
+}
+
+.video video {
+    display: block;
+    margin: auto;
+}
+
+a {
+    color:aliceblue;
+}
+
+/* Mobile Screens*/
+@media screen and (max-width:720px){
+    body {
+        margin-bottom: 13vw;
+    }
+
+    body ul {
+        display: flow-root;
+        margin-bottom: 2vw;
+    }
+
+    body li {
+        font-size: 4vw;
+    }
+
+    li {
+        display: block;
+    }
+
+    li a {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        float: left;
+    }
+
+    .menuelements {
+        position: absolute;
+        margin-top: calc(4vw + 20px);
+        clear: both;
+        float: left;
+    }
+
+    .menutop:hover ul li a{
+        display: block;
+    }
+
+    ul img {
+        width: calc(3.5vw + 16px);
+    }
+
+    .maingrid {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        margin-bottom: 3vw;
+    }
+
+    footer {
+        text-align: center;
+        width: calc(100vw - 16px - calc(100vw - 100%));
+    }
+
+    footer ul {
+        margin-bottom: 0;
+    }
+
+    footer li{
+        font-size: 4vw;
+    }
+
+    .left, .right {
+        float: none;
+    }
+
+    .intro {
+        grid-area: 2/1/2/6;
+        padding: 0 1em;
+    }
+
+    .image {
+        grid-area: 1/1/1/6;
+    }
+
+    hr {
+        grid-area: 3/1/3/6;
+        margin-top: 4vw;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 5px;
+    }
+
+    .image img {
+        width: calc(100vw - calc(100vw - 100%));
+        margin: 0 auto 4vw auto;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+
+    .video {
+        grid-area: 4/1/3/6;
+        margin-top: 0.5vw;
+    }
+
+    .video video {
+        width: calc(100vw - calc(100vw - 100%));
+    }
+}
+
+/* Medium Screens */
+@media screen and (min-width:721px) and (max-width:1280px){
+    body {
+        margin-bottom: 2.75vw;
+    }
+
+    /* Navigation List*/
+    body ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    /* Navigation List Item*/
+    body li {
+        font-size: 1.5vw;
+        float: left;
+    }
+
+    /* Navigation List Link*/
+    li a {
+        display: block;
+    }
+
+    /* Hides Mobile Only Navigation*/
+    .menu, .secondary {
+        display: none;
+    }
+
+    /* Navbar Image*/
+    ul img {
+        width: calc(1.5vw + 16px);
+    }
+
+    footer {
+        font-size: 1vw;
+        width: 99%;
+    }
+
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+
+    .maingrid {
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        margin-top: 1vw;
+    }
+
+    footer {
+        width: calc(100vw - 16px - calc(100vw - 100%));
+    }
+
+    footer li{
+        font-size: 1.5vw;
+    }
+
+    .image {
+        grid-area: 1/2/1/5;
+        background-color: #222;
+        width: 28vw;
+        display: flex;
+    }
+
+    .image img, .image2 img {
+        width: 28vw;
+        align-self: center;
+    }
+
+    hr {
+        grid-area: 2/2/2/10;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 5px;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 1.9vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    .intro {
+        grid-area: 1/5/1/10;
+        padding: 0em 2.5vw;
+    }
+    
+    .stats {
+        grid-area: 1/2/1/10;
+    }
+
+    .video {
+        grid-area: 3/2/3/10;
+        margin-top: 1vw;
+    }
+
+    .video video {
+        width: 50vw;
+    }
+}
+
+/* Desktop Screens*/
+@media screen and (min-width:1281px){
+    body {
+        margin-bottom: 2.75vw;
+    }
+
+    /* Navigation List*/
+    body ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    /* Navigation List Item*/
+    body li {
+        font-size: 1.5vw;
+        float: left;
+    }
+
+    /* Navigation List Link*/
+    li a {
+        display: block;
+    }
+
+    /* Hides Mobile Only Navigation*/
+    .menu, .secondary {
+        display: none;
+    }
+
+    /* Navbar Image*/
+    ul img {
+        width: calc(1.5vw + 16px);
+    }
+
+    footer {
+        font-size: 1vw;
+        width: 99%;
+    }
+
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+
+    .maingrid {
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        margin-top: 1vw;
+    }
+
+    footer {
+        width: calc(100vw - 16px - calc(100vw - 100%));
+    }
+
+    footer li{
+        font-size: 1.5vw;
+    }
+
+    .image {
+        grid-area: 1/2/1/5;
+        background-color: #222;
+        width: 28vw;
+        display: flex;
+    }
+
+    .image img, .image2 img {
+        width: 28vw;
+        align-self: center;
+    }
+
+    hr {
+        grid-area: 2/2/2/10;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 5px;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 1.7vw;
+    }
+
+    p {
+        font-size: 1.15vw;
+    }
+
+    .intro {
+        grid-area: 1/5/1/10;
+        padding: 0em 2.5vw;
+    }
+    
+    .stats {
+        grid-area: 1/2/1/10;
+    }
+
+    .video {
+        grid-area: 3/2/3/10;
+        margin-top: 1vw;
+    }
+
+    .video video {
+        width: 50vw;
+    }
+}
+
+/* These next two save bandwidth for host and client */
+
+@media screen and (max-width:1920px){
+    /* Shows only small versions on small devices */
+    .large {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:1921px){
+    /* Shows only full resolution on large devices */
+    .small {
+        display: none !important;
+    }
+}

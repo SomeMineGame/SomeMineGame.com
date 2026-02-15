@@ -1,0 +1,413 @@
+body {
+    background-color: #333;
+    text-align: center;
+}
+
+/* Navigation List*/
+body ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+li {
+    display: block;
+}
+
+/* Navigation List Link*/
+li a {
+    text-align: center;
+    padding: 10px 16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #222;
+}
+
+/* Navbar Text*/
+.sitename {
+    padding: 10px 16px;
+    margin: 0;
+    float: right;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Navbar Image*/
+ul img {
+    padding-top: 4px;
+    padding-right: 4px;
+    margin: 0;
+    float: right;
+}
+
+/* Highlights Current Nav Link*/
+.active {
+    background-color: #2a2a2a;
+}
+
+.imgbg {
+    display: none;
+}
+
+.image img, .image2 img {
+    display: block;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+h1, p {
+    color: aliceblue;
+    text-align: center;
+}
+
+a {
+    color:aliceblue;
+}
+
+/* Mobile Screens*/
+@media screen and (max-width:720px){
+    body {
+        margin-bottom: 13vw;
+    }
+
+    body ul {
+        display: flow-root;
+        margin-bottom: 2vw;
+        z-index: 3;
+    }
+
+    body li {
+        font-size: 4vw;
+    }
+
+    li {
+        display: block;
+    }
+
+    li a {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        float: left;
+    }
+
+    .menuelements {
+        position: absolute;
+        margin-top: calc(4vw + 20px);
+        clear: both;
+        float: left;
+    }
+
+    .menutop:hover ul li a{
+        display: block;
+    }
+
+    ul img {
+        width: calc(3.5vw + 16px);
+    }
+
+    .left, .right {
+        float: none;
+    }
+
+    hr {
+        grid-area: 3/1/3/6;
+        margin-top: 4vw;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 5px;
+    }
+
+    .image img {
+        width: calc(100vw - calc(100vw - 100%));
+        margin: 0 auto 4vw auto;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+}
+
+/* Medium Screens */
+@media screen and (min-width:721px) and (max-width:1280px){
+    body {
+        margin-bottom: 2.75vw;
+    }
+
+    /* Navigation List*/
+    body ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    /* Navigation List Item*/
+    body li {
+        font-size: 1.5vw;
+        float: left;
+    }
+
+    /* Navigation List Link*/
+    li a {
+        display: block;
+    }
+
+    /* Hides Mobile Only Navigation*/
+    .menu, .secondary {
+        display: none;
+    }
+
+    /* Navbar Image*/
+    ul img {
+        width: calc(1.5vw + 16px);
+    }
+
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+
+    .image {
+        background-color: #222;
+        width: 28vw;
+        display: flex;
+    }
+
+    .image img, .image2 img {
+        width: 28vw;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 1.9vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+/* Desktop Screens*/
+@media screen and (min-width:1281px){
+    body {
+        margin-bottom: 2.75vw;
+    }
+
+    /* Navigation List*/
+    body ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    /* Navigation List Item*/
+    body li {
+        font-size: 1.5vw;
+        float: left;
+    }
+
+    /* Navigation List Link*/
+    li a {
+        display: block;
+    }
+
+    /* Hides Mobile Only Navigation*/
+    .menu, .secondary {
+        display: none;
+    }
+
+    /* Navbar Image*/
+    ul img {
+        width: calc(1.5vw + 16px);
+    }
+
+    footer {
+        font-size: 1vw;
+        width: 99%;
+    }
+
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+
+    .image {
+        grid-area: 1/2/1/5;
+        background-color: #222;
+        width: 28vw;
+        display: flex;
+    }
+
+    .image img, .image2 img {
+        width: 28vw;
+        align-self: center;
+    }
+
+    hr {
+        grid-area: 2/2/2/10;
+        width: calc(100vw - calc(100vw - 100%));
+        height: 5px;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 1.7vw;
+    }
+
+    p {
+        font-size: 1.15vw;
+    }
+}
+
+/* These next two save bandwidth for host and client */
+
+@media screen and (max-width:1920px){
+    /* Shows only small versions on small devices */
+    .large {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:1921px){
+    /* Shows only full resolution on large devices */
+    .small {
+        display: none !important;
+    }
+}
+
+.container {
+  text-align: center;
+  width: 75vw;
+  margin: auto;
+}
+
+.mockup {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 0;
+  perspective: 2400px;
+  perspective-origin: 50% 100%;
+  opacity: 0;
+  transition: 500ms opacity;
+}
+
+.mockup.loaded {
+  opacity: 1;
+}
+
+.mockup .part .top,
+.mockup .part .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mockup .part.top {
+  transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+.mockup:hover .part.top {
+  z-index: 1;
+  transform: translate3d(0, 0, 0) rotateX(0deg);
+}
+
+.mockup .part {
+  display: inline-block;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  transition: 900ms;
+}
+
+.mockup.opened .part .top {
+  transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);
+}
+
+.mockup .part .top {
+  transform-origin: 50% 0;
+  transform: translate3d(0, 0, -11px) rotateX(90deg);
+  transition: 900ms;
+}
+
+.mockup img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.mockup .part .cover {
+  position: relative;
+}
+
+.mockup #screen {
+  display: block;
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  width: 92%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 1px);
+}
+
+.mockup .part.bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+.mockup .part .bottom {
+    transform-origin: 50% 0;
+    transform: translate3d(0,0,0) rotateX(90deg);
+}
+
+#phone {
+    width: 25%
+}
+
+#phone:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

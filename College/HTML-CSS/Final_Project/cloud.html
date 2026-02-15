@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+<body>
+    <ul id="homeul">
+        <li class="right"><img class="pfp_nav" src="./assets/Primary128.png" alt="Profile Picture Made By My Friend"></li>
+        <li class="sitename">SomeMineGameTech</li>
+        <li class="menutop"><a class="menu">Menu</a>
+            <ul class="menuelements">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./primary.html">Primary</a></li>
+                <li><a href="./hosting.html">Hosting</a></li>
+                <li><a class="active" href="./cloud.html">Cloud</a></li>
+                <li><a href="./network.html">Network</a></li>
+                <li><a href="./miscellaneous.html">Miscellaneous</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="maingrid">
+        <div class="image">
+            <img class="small" src="./assets/Cloud.jpg" alt="Image of cloud server">
+            <img class="large" src="./assets/CloudFull.jpg" alt="Image of cloud server">
+        </div>
+        <div class="intro">
+            <h1 class="indent">Cloud Server</h1>
+            <p>My cloud server is mostly used for hosting files I commonly use between systems.
+                This is primarily my GitHub repositories, but I also use it to transfer files instead of grabbing USB sticks.
+                I also put all of my phone's videos on there as they were using up 108GB of my phone's storage. Now I can afford to use the 4k 60fps or even 8k modes!
+                There are also some Docker containers which run services such as a web based file manager and some services I use to monitor my game hosting.
+            </p>
+        </div>
+    </div>
+    <div class="maingrid">
+        <div class="image">
+            <img src="./assets/cloud_specs.png" alt="Screenshot of cloud server's specs.">
+        </div>
+        <div class="intro">
+            <h1 class="indent">Cloud Server Specs</h1>
+            <p>This server has a lot going on. It has 2 power supplies, mostly for redundancy (if one fails, the other seamlessly takes over).
+                There are 2 active processors - the Intel Xeon E5-2697 v2. There is also 512GB of RAM powering this thing.
+                I got the high RAM so I can host dev versions of my sites that don't need to get published as often.
+                There's a 2TB SSD containing the OS, apps, and configs, and a 5.5TB RAID 6 setup.<br><br>
+                I use RAID 6 as it allows any 2 drives to fail without loss of any data. With there being 7 drives in my raid, I have a spare
+                that will automatically activate after the first failure. I have 3 spare drives already in case
+                I need them. Each drive is 1.2TB on its own, and the RAID makes them look as a single larger drive.<br><br>
+                The server also comes with an integrated monitoring system for hardware, raid configs,
+                and even trends for power usage and temperature.
+            </p>
+        </div>
+        <hr>
+    </div>
+    <div class="maingrid">
+        <div class="intro stats">
+            <h1 class="indent">Current Cloud Projects</h1>
+            <p>Currently I have File Browser for web based file management, Grafana for stats on my services, and SFTP for direct access to the RAID.
+
+            </p>
+        </div>
+        <hr>
+    </div>
+    <div class="video">
+        <video class="small" src="./assets/Cloud.mp4" controls="controls"></video>
+        <video class="large" src="./assets/CloudFull.mp4" controls="controls"></video>
+    </div>
+<footer>
+    <ul style="padding: 3px 10px">
+        <li class="left">Site Created By: SomeMineGame</li>
+        <li class="right">Page Last Edited: December 7, 2025 at 11:57 AM</li>
+    </ul>
+</footer>
+</body>
+</html>

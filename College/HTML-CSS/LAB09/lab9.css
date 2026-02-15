@@ -1,0 +1,53 @@
+body {
+    background-color: #333;
+    color: aliceblue;
+}
+
+@font-face {
+    font-family: "Minecrafter Alt";
+    src: url(Minecrafter.Alt.ttf);
+}
+
+#title {
+    font-size: 35px;
+    font-family: "Minecrafter Alt";
+}
+
+#desc {
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+}
+
+#fonts {
+    font-size: 20px;
+}
+
+a {
+    color: antiquewhite;
+    text-underline-offset: -7px;
+}
+
+a span {
+    color: white;
+    font-size: 24px;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+}
+
+a .lift {
+    top: -8px;
+    left: 3px;
+    position: relative;
+}
+
+a p {
+    margin-bottom: -10px;
+}
+
+#version {
+    position: absolute;
+    bottom: 0;
+}

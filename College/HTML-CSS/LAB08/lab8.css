@@ -1,0 +1,78 @@
+img {
+    width: 400px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+p {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFFAA;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 8px;
+    position: absolute;
+}
+
+h3 {
+    position: absolute;
+    width: 350px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 12px;
+    padding:10px;
+    border: 3px solid blue;
+    overflow: hidden;
+    top: 250px;
+    left: 50px;
+    z-index: 35;
+}
+
+#YT {
+    top: 45px;
+    left: 20px;
+    z-index: 1;
+}
+
+#YTp {
+    top: 190px;
+    left: 250px;
+    z-index: 11;
+}
+
+#TW {
+    top: 70px;
+    left: 450px;
+    z-index: 2;
+}
+
+#TWp {
+    top: 350px;
+    left: 475px;
+    z-index: 12;
+}
+
+#SL {
+    top: 450px;
+    left: 35px;
+    z-index: 4;
+}
+
+#SLp {
+    top: 525px;
+    left: 230px;
+    z-index: 14;
+}
+
+#OBS {
+    top: 450px;
+    left: 425px;
+    z-index: 3;
+}
+
+#OBSp {
+    top: 505px;
+    left: 590px;
+    z-index: 13;
+}

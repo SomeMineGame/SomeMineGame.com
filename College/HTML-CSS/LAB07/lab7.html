@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomeMineGame lab7</title>
+    <style>
+        p {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .ordered {
+            list-style: upper-roman;
+        }
+        
+        .ordered ol.L2 {
+            list-style: upper-alpha;
+        }
+
+        .graphical {
+            list-style: url(shocked.png);
+        }
+
+        .graphical ol.L2{
+            list-style: url(thumbs_up.png);
+        }
+
+        .graphical span {
+            top: -7px;
+            position: relative;
+        }
+
+        .acronyms{
+            font-family: serif;
+            display: contents;
+        }
+
+        .acronyms li {
+            list-style-type: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Ordered list</p>
+    <ol class="ordered">
+        <li>Level One, Line One
+            <ol class="L2">
+                <li>Level Two, Line One</li>
+                <li>Level Two, Line Two
+                    <ol class="L3">
+                        <li>Level Three, Line One</li>
+                        <li>Level Three, Line Two</li>
+                        <li>Level Three, Line Three</li>
+                    </ol>
+                </li>
+                <li>Level Two, Line Three
+                    <ol class="L3">
+                        <li>Level Three, Line One</li>
+                        <li>Level Three, Line Two</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Level One, Line Two
+            <ol class="L2">
+                <li>Level Two, Line One
+                    <ol class="L3">
+                        <li>Level Three, Line One</li>
+                        <li>Level Three, Line Two</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <p>Unordered list</p>
+    <ul>
+        <li>Level One, Line One
+            <ul>
+                <li>Level Two, Line One</li>
+                <li>Level Two, Line Two
+                    <ul>
+                        <li>Level Three, Line One</li>
+                        <li>Level Three, Line Two</li>
+                        <li>Level Three, Line Three</li>
+                    </ul>
+                </li>
+                <li>Level Two, Line Three
+                    <ul>
+                        <li>Level Three, Line One</li>
+                        <li>Level Three, Line Two</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Level One, Line Two
+            <ul>
+                <li>Level Two, Line One
+                    <ul>
+                        <li>Level Three, Line One</li>
+                        <li>Level Three, Line Two</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>Graphical list</p>
+    <ol class="graphical">
+        <li><span>Level One, Line One</span>
+            <ol class="L2">
+                <li><span>Level Two, Line One</span></li>
+                <li><span>Level Two, Line Two</span></li>
+                <li><span>Level Two, Line Three</span></li>
+            </ol>
+        </li>
+        <li><span>Level One, Line Two</span>
+            <ol class="L2">
+                <li><span>Level Two, Line One</span></li>
+                <li><span>Level Two, Line Two</span></li>
+                <li><span>Level Two, Line Three</span></li>
+            </ol>
+        </li>
+    </ol>
+    <p>Web acronyms list</p>
+    <ul class="acronyms">
+        <li>HTML
+            <ul>
+                <li>Hyper-Text Markup Language</li>
+            </ul>
+        </li>
+        <li>URL
+            <ul>
+                <li>Uniform Resource Locator</li>
+            </ul>
+        </li>
+        <li>WWW
+            <ul>
+                <li>World Wide Web</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Version 1.0.7</p>
+</body>
+</html>

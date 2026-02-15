@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--Move the ball exercise
+Author: SomeMineGame
+Date  : 1-12-2026-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move The Ball - SomeMineGame</title>
+    <script src="./moveball.js" async></script>
+    <style>
+        .button {
+            position: absolute;
+            background-color: antiquewhite;
+        }
+
+        #btnChangeBall {
+            top: 60px;
+            left: 10px;
+        }
+
+        #btnUp {
+            top: 100px;
+            left: 90px;
+        }
+
+        #btnDown {
+            top: 140px;
+            left: 90px;
+        }
+
+        #btnLeft {
+            top: 120px;
+            left: 40px;
+        }
+
+        #btnRight {
+            top: 120px;
+            left: 150px;
+        }
+
+        #ball {
+            position: absolute;
+            top: 160px;
+            left: 10px;
+            color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    Move the ball - SomeMineGame
+<!-- Year.Sem.Week -->
+    Version 1.2.01
+    <input class="button" type="button" value="Change Ball" id="btnChangeBall">
+    <input class="button" type="button" value=" Up " id="btnUp">
+    <input class="button" type="button" value="Down" id="btnDown">
+    <input class="button" type="button" value="Left" id="btnLeft">
+    <input class="button" type="button" value="Right" id="btnRight">
+    <h1 id="ball">*</h1>
+
+    <div id="txtKeyPressed">Key Pressed - None</div>
+</body>
+</html>

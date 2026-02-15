@@ -1,0 +1,22 @@
+#inlinetable tr:nth-child(odd) {
+    background-color: #777;
+}
+
+#inlinetable tr:nth-child(even) {
+    background-color: #999;
+}
+
+#inlinetable table {
+    border-collapse: collapse;
+}
+
+#inlinetable td {
+    border: 1px solid black;
+    padding: 0.5vw 1vw;
+    text-align: center;
+    width: 15px;
+}
+
+.pickedCell {
+    background-color: #bbb;
+}

@@ -1,4 +1,8 @@
 @media screen and (max-width: 720px) {
+    .maincontainer {
+        grid-area: 1/1/1/6;
+    }
+
     .name {
         width: 25vw;
         font-size: 4vw;
@@ -7,13 +11,13 @@
 
     figure {
         display: inline-block;
-        width: 44vw;
+        width: 27vw;
         margin: 1vw;
         vertical-align: top;
     }
 
     figure img {
-        width: 44vw;
+        width: 27vw;
     }
 
     figure figcaption {
@@ -25,9 +29,13 @@
 }
 
 @media screen and (min-width: 721px) {
+    .maincontainer {
+        grid-area: 1/2/1/10;
+    }
+
     figure {
         display: inline-block;
-        width: 17vw;
+        width: 13vw;
         margin: 1vw;
         vertical-align: top;
     }

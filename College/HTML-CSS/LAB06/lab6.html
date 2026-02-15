@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomeMineGame lab6</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .width td {
+            width: 75px;
+        }
+
+        .size {
+            font-size: 80%;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .left {
+            width: 120px !important;
+            text-align: right;
+        }
+
+        .high {
+            background-color: #FFAAAA;
+        }
+
+        .low {
+            background-color: #AAAAFF;
+        }
+    </style>
+</head>
+<body>
+    <p>Table #1</p>
+    <table>
+        <tr>
+            <td>January</td>
+            <td>February</td>
+            <td>March</td>
+            <td>April</td>
+            <td>May</td>
+            <td>June</td>
+            <td>July</td>
+            <td>August</td>
+            <td>September</td>
+            <td>October</td>
+            <td>November</td>
+            <td>December</td>
+        </tr>
+        <tr>
+            <td>23°</td>
+            <td>27°</td>
+            <td>40°</td>
+            <td>56°</td>
+            <td>69°</td>
+            <td>79°</td>
+            <td>82°</td>
+            <td>80°</td>
+            <td>73°</td>
+            <td>59°</td>
+            <td>43°</td>
+            <td>28°</td>
+        </tr>
+        <tr>
+            <td>6°</td>
+            <td>10°</td>
+            <td>23°</td>
+            <td>36°</td>
+            <td>47°</td>
+            <td>58°</td>
+            <td>62°</td>
+            <td>59°</td>
+            <td>51°</td>
+            <td>39°</td>
+            <td>26°</td>
+            <td>13°</td>
+        </tr>
+    </table>
+    <p>Table #2</p>
+    <table class="width">
+        <tr class="size">
+            <td>January</td>
+            <td>February</td>
+            <td>March</td>
+            <td>April</td>
+            <td>May</td>
+            <td>June</td>
+            <td>July</td>
+            <td>August</td>
+            <td>September</td>
+            <td>October</td>
+            <td>November</td>
+            <td>December</td>
+        </tr>
+        <tr>
+            <td>23°</td>
+            <td>27°</td>
+            <td>40°</td>
+            <td>56°</td>
+            <td>69°</td>
+            <td>79°</td>
+            <td>82°</td>
+            <td>80°</td>
+            <td>73°</td>
+            <td>59°</td>
+            <td>43°</td>
+            <td>28°</td>
+        </tr>
+        <tr>
+            <td>6°</td>
+            <td>10°</td>
+            <td>23°</td>
+            <td>36°</td>
+            <td>47°</td>
+            <td>58°</td>
+            <td>62°</td>
+            <td>59°</td>
+            <td>51°</td>
+            <td>39°</td>
+            <td>26°</td>
+            <td>13°</td>
+        </tr>
+    </table>
+    <p>Table #3</p>
+    <table class="width center">
+        <tr>
+            <th colspan="12"><b>Average Monthly Temperatures °F - Hutchinson, MN</b></th>
+        </tr>
+        <tr class="size">
+            <td>January</td>
+            <td>February</td>
+            <td>March</td>
+            <td>April</td>
+            <td>May</td>
+            <td>June</td>
+            <td>July</td>
+            <td>August</td>
+            <td>September</td>
+            <td>October</td>
+            <td>November</td>
+            <td>December</td>
+        </tr>
+        <tr>
+            <td>23°</td>
+            <td>27°</td>
+            <td>40°</td>
+            <td>56°</td>
+            <td>69°</td>
+            <td>79°</td>
+            <td>82°</td>
+            <td>80°</td>
+            <td>73°</td>
+            <td>59°</td>
+            <td>43°</td>
+            <td>28°</td>
+        </tr>
+        <tr>
+            <td>6°</td>
+            <td>10°</td>
+            <td>23°</td>
+            <td>36°</td>
+            <td>47°</td>
+            <td>58°</td>
+            <td>62°</td>
+            <td>59°</td>
+            <td>51°</td>
+            <td>39°</td>
+            <td>26°</td>
+            <td>13°</td>
+        </tr>
+    </table>
+    <p>Table #4</p>
+    <table class="width center">
+        <tr>
+            <th colspan="13"><b>Average Monthly Temperatures °F - Hutchinson, MN</b></th>
+        </tr>
+        <tr class="size">
+            <td class="left">Month Name</td>
+            <td>January</td>
+            <td>February</td>
+            <td>March</td>
+            <td>April</td>
+            <td>May</td>
+            <td>June</td>
+            <td>July</td>
+            <td>August</td>
+            <td>September</td>
+            <td>October</td>
+            <td>November</td>
+            <td>December</td>
+        </tr>
+        <tr class="high">
+            <td class="size left">Average High</td>
+            <td>23°</td>
+            <td>27°</td>
+            <td>40°</td>
+            <td>56°</td>
+            <td>69°</td>
+            <td>79°</td>
+            <td>82°</td>
+            <td>80°</td>
+            <td>73°</td>
+            <td>59°</td>
+            <td>43°</td>
+            <td>28°</td>
+        </tr>
+        <tr class="low">
+            <td class="size left">Average Low</td>
+            <td>6°</td>
+            <td>10°</td>
+            <td>23°</td>
+            <td>36°</td>
+            <td>47°</td>
+            <td>58°</td>
+            <td>62°</td>
+            <td>59°</td>
+            <td>51°</td>
+            <td>39°</td>
+            <td>26°</td>
+            <td>13°</td>
+        </tr>
+    </table>
+    <p>Version 1.0.6
+</body>
+</html>
